@@ -6,38 +6,57 @@
 	<title>Daniel Camba</title>
 </head>
 <body>
+	<div id="divcabecalho">
 	<header id="cabecalho">
-		<img src="C:\Users\danie\OneDrive\Área de Trabalho\Portifólio\Imagens\daniel.jpg" width="157" height="156">
-		<h1 id="titulo">Daniel Camba Fernandes</h1>
+		<img src="C:\Users\danie\OneDrive\Área de Trabalho\Portifólio\Imagens\daniel.jpg" width="200" height="200">
+		<h1 id="titulo">Daniel Camba Fernandes</h1><
+		<h3 id="subtitulo">Desenvolvedor Front-End</h3>
 	</header>
+</div>
+	<br>
+	<br>
+	<br>
 	<br>
 	<p id="bemvindo">Seja bem vindo ao meu Portifólio!</p>
 	<br>
 	<br>
-	<div id="btn">
+	<br>
+	<br>
+	<br>
 	  <button class="openbtn" onclick="openNav()">&#x25B6</button>
-  </div>
   <div id="divdadiv">
+  	<div id="basico">
+  		<h1 onclick="sobreMim()">Sobre mim</h1>
+  	</div>
 	<div id="divsection">
-	<section id="informaçoes">
-			<tittle id="basico">Informações básicas</tittle>
-			<p>Tenho 21 anos, atualmente cursando técnico em Informática para Internet no SENAI-MG.<br> 
-				Trabalho bem em equipe, aprendo com facilidade, me comunico bem, sempre atualizado, tenho interesse em áreas como desenvolvimento, programação e business intelligence. Fui jovem aprendiz por 11 meses na empresa LM 2 RODAS nas áreas de informática, B.I e web design, fui contratado para atuar na mesma demanda como Assistente de Suporte e atualmente atuo como Tecnico em Suporte T.I na Mundial Hospitalar.<br> 
+		<div id="divinfo">
+			<section id="informaçoes">
+					<p>Tenho 21 anos, atualmente cursando técnico em Informática para Internet no SENAI-MG.<br> 
+						Trabalho bem em equipe, aprendo com facilidade, me comunico bem, sempre atualizado, tenho interesse em áreas como desenvolvimento e programação front-end. Fui jovem aprendiz por 11 meses na empresa LM 2 RODAS nas áreas de informática, B.I e web design, fui contratado para atuar na mesma demanda como Assistente de Suporte e atualmente atuo como Tecnico em Suporte T.I na Mundial Hospitalar.<br> 
 			    Sou uma pessoa bastante participativa, bem organizada e analista devido as várias demandas de desenvolvimento de relatórios.</p>
 			</section>
-		<section id="experiencias">
-			<tittle id="profissional">Experiências profissionais</tittle>
-			<p>Insira aqui as experiencias</p>
-		</section>
-		<section id="projetos">
-			<tittle id="tituloprojeto">Projetos</tittle>
-			<ul>
-				<li><a href="_blank">Projeto 1</a></li>
-				<li><a href="_blank">Projeto 2</a></li>
-				<li><a href="_blank">Projeto 3</a></li>
-			</ul>
-	</section>
-</div>
+		</div>
+		<div id="profissional">
+			<h1 onclick="exp()">Experiências Profissionais</h1>
+		</div>
+		<div id="divexp">
+			<section id="experiencias">
+				<p>Insira aqui as experiencias</p>
+			</section>
+		</div>
+		<div id="tituloprojetos">
+			<h1 onclick="proj()">Projetos</h1>
+		</div>
+		<div id="divproj">
+			<section id="projetos">
+					<ul>
+						<li><a href="_blank">Projeto 1</a></li>
+						<li><a href="_blank">Projeto 2</a></li>
+						<li><a href="_blank">Projeto 3</a></li>
+					</ul>
+			</section>
+		</div>
+	</div>
 </div>
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -49,9 +68,11 @@
 	<br>
 	<br>
 	<hr>
+	<div id="divrodape">
 	<footer id="rodape">
 		<p><i>Criado por: Daniel Camba Fernandes</i></p>
 	</footer>
+</div>
 </body>
 
 <script>
@@ -61,9 +82,37 @@ function openNav() {
   document.getElementById("main").style.marginLeft = "250px";
 }
 
+
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
+}
+
+function sobreMim(){
+	if(document.getElementById("divinfo").style.display == "none"){
+	document.getElementById("divinfo").style.display = "block";
+}
+else{
+	document.getElementById("divinfo").style.display = "none";
+}
+}
+
+function exp(){
+	if(document.getElementById("divexp").style.display == "none"){
+	document.getElementById("divexp").style.display = "block";
+}
+else{
+	document.getElementById("divexp").style.display = "none";
+}
+}
+
+function proj(){
+	if(document.getElementById("divproj").style.display == "none"){
+	document.getElementById("divproj").style.display = "block";
+}
+else{
+	document.getElementById("divproj").style.display = "none";
+}
 }
 
 </script>
