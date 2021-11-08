@@ -1,0 +1,27 @@
+html,body{
+	height:  100%;
+}
+
+
+*{
+	margin:  0;
+	padding:  0;
+}
+
+#container-img{
+	width: 65%;
+	height:  100%;
+	float: left;
+    background-image: url("C:/Users/User/Documents/Daniel/Projeto1/Imagens/controle.jpg");
+    background-size: cover;
+    filter:  blur(6px);
+
+}
+
+#container-login{
+	text-align:  center;
+	border: 1px solid black;
+	width: 33%;
+	height: 100%;
+	float: right;
+}
