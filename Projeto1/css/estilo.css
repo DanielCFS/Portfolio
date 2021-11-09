@@ -1,27 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+
+
+@keyframes slideinLeft{
+	from{
+			transform: translateX(9999px);
+	}
+
+	to{
+		transform:  translateX(0);
+	}
+
+	}
+
+
+
 html,body{
 	height:  100%;
+	overflow: hidden;
 }
 
+body{
+	background-image: linear-gradient(to right,#8312A5,#720B98,#561496,#391E94,#1D2791,#0037A5);
+	background-repeat: no-repeat;
+}
 
 *{
 	margin:  0;
 	padding:  0;
 }
 
-#container-img{
-	width: 65%;
-	height:  100%;
+#container-txt{
+	width: 52%;
+	height: 100%;
 	float: left;
-    background-image: url("C:/Users/User/Documents/Daniel/Projeto1/Imagens/controle.jpg");
-    background-size: cover;
-    filter:  blur(6px);
-
+	text-align: center;
 }
 
+#container-txt h1{
+	font-size: 72px;
+	color: white;
+	text-shadow: 5px 5px black;
+	font-family: Righteous;
+	margin-top:  15%;
+}
+#container-txt p {
+	color: white;
+	font-weight: bold;
+	font-family: Nunito;
+	font-size:  16px;
+}
+
+
+
 #container-login{
+	display: table-cell;
+	font-family: "Nunito";
 	text-align:  center;
-	border: 1px solid black;
-	width: 33%;
+	width: 48%;
 	height: 100%;
 	float: right;
+}
+
+#login{
+	animation: slideinLeft 0.6s;
+	display:  inline-block;		
+	margin-top: 8%;
+	box-shadow: 0 0 5px 3px;
+	width: 75%;
+	height: 85%;
+	border-radius: 2px 2px 2px 2px;
+	background-color:  white;
+}
+
+#login h1{
+	margin-top: 10%;
+}
+
+#login form{
+	margin-top: 15%;
+}
+
+#textbox1:focus{
+	outline: none;
+}
+
+#passwordbox1:focus{
+	outline: none;
+}
+
+#textbox1,#passwordbox1{
+	width: 90%;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	font-size: 18px;
+}
+
+#passwordbox1{
+	margin-top: 15%;
+}
+
+#forgot{
+	float: right;
+	margin-right: 2%;
+}
+
+#btn{
+	margin-top: 5%;
+	color: white;
+	background-repeat: no-repeat;
+	background-color: purple;
+	width: 45%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	box-sizing: content-box;
+	font-family: Nunito;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#create{
+	color: white;
+	background-repeat: no-repeat;
+	background-color: blue;
+	width: 45%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	box-sizing: content-box;
+	font-family: Nunito;
+	font-weight: bold;
+	font-size: 20px;
 }
