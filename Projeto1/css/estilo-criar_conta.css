@@ -1,0 +1,35 @@
+/*------------------------- CRIAR CONTA ---------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+
+html,body{
+	height:  100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+body{
+	background-image: linear-gradient(to right,#8312A5,#720B98,#561496,#391E94,#1D2791,#0037A5);
+	background-repeat: no-repeat;
+}
+
+
+#container-create{
+	height: 100%;
+	font-family: Nunito;
+}
+
+
+#conta{
+	display: inline-block;		
+	margin-top: 4%;
+	box-shadow: 0 0 5px 3px;
+	width: 32%;
+	height: 80%;
+	border-radius: 2px 2px 2px 2px;
+	background-color:  white;
+}
+
+input{
+	margin-top: 5%;
+}

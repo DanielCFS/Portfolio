@@ -133,3 +133,41 @@ body{
 	font-weight: bold;
 	font-size: 20px;
 }
+
+@media (max-width: 860px){
+	html,body{
+		overflow-y: visible;
+	}
+
+	#container-txt{
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+	#container-txt h1{
+		font-size: 45px;
+	}
+	#container-txt p{
+		font-size: 14px;
+	}
+	#container-login{
+		display: block;
+		width: 100%;
+		height: 80%;
+	}
+	#login{
+		animation: none;
+	}
+
+	#login h1{
+		font-size: 22px;
+	}
+
+	#textbox1,#passwordbox1{
+		font-size: 14px;
+	}
+	#forgot{
+		font-size:  14px;
+	}
+
+}

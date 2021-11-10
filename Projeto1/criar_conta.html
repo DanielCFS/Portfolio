@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="C:\Users\usuario\Downloads\Daniel\Portifolio-main\Projeto1\css\estilo-criar_conta.css">
+</head>
+	<body>
+		<div id="container-create">
+			<div id="conta">
+				<h1>Vamos Começar!</h1>
+				<form>
+					<input id="textbox2" type="text" name="usuario" placeholder="Insira seu Usuário" required><br>
+					<input id="email" type="email" name="email" placeholder="Agora o seu e-mail" required><br>
+					<input id="confirm-email" type="email" name="confirm-email" placeholder="Confirme seu e-mail" required><br>
+					<input id="passwordbox2" type="password" name="senha" placeholder="Senha"><br>
+					<input id="confirm-pw" type="password" name="confirm-pw" placeholder="Confirme sua senha!"><br>
+					<input id="btn" type="submit" value="Criar" onclick="validation()">
+				</form>	
+			</div>
+		</div>
+	</body>
+	<script>
+		function validation(){
+			var email = document.getElementById("email").value;
+			var confirm_email = document.getElementById("confirm-email").value;
+			var senha = document.getElementById("passwordbox2").value;
+			var confirm_pw = document.getElementById("confirm-pw").value;
+
+			if(email != confirm_email && senha != confirm_pw){
+				alert("Emails e Senhas não batem");
+			}
+			else if(email != confirm_email && senha == confirm_pw){
+				alert("Emails não batem")
+			}
+			else if(email == confirm_email && senha != confirm_pw){
+				alert("Senhas não batem")
+			}
+			else{
+				alert("Sucesso!");
+			}
+
+		}
+	</script>
+</html>
+
