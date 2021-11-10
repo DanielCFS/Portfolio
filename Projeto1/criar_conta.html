@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="C:\Users\usuario\Downloads\Daniel\Portifolio-main\Projeto1\css\estilo-criar_conta.css">
+	<link rel="stylesheet" href="C:\Users\User\Documents\Daniel\Portifolio-main\Projeto1\css\estilo-criar_conta.css">
 </head>
 	<body>
 		<div id="container-create">
@@ -15,8 +15,8 @@
 					<input id="confirm-email" type="email" name="confirm-email" placeholder="Confirme seu e-mail" required><br>
 					<input id="passwordbox2" type="password" name="senha" placeholder="Senha"><br>
 					<input id="confirm-pw" type="password" name="confirm-pw" placeholder="Confirme sua senha!"><br>
-					<input id="btn" type="submit" value="Criar" onclick="validation()">
 				</form>	
+				<button id="submit" onclick="validation()">Criar</button>
 			</div>
 		</div>
 	</body>
@@ -26,18 +26,41 @@
 			var confirm_email = document.getElementById("confirm-email").value;
 			var senha = document.getElementById("passwordbox2").value;
 			var confirm_pw = document.getElementById("confirm-pw").value;
+			var len_usuario = document.getElementById("textbox2").value.length
+			var len_email = document.getElementById("email").value.length;
+			var len_senha = document.getElementById("passwordbox2").value.length;
 
-			if(email != confirm_email && senha != confirm_pw){
+			if(len_email == 0 && len_senha == 0 && len_usuario == 0){
+				alert("Por favor, insira seu usuario, email e senha");
+			}
+
+			else if(len_email == 0 && len_senha == 0 && len_usuario != 0){
+				alert("Por favor, insira seu e-mail e senha");
+			}
+
+			else if(len_email != 0 && len_senha == 0 && len_usuario != 0){
+				alert("Por favor, insira sua senha");
+			}
+			else if(len_email == 0 && len_senha != 0 && len_usuario != 0){
+				alert("Por favor, insira seu e-mail");
+			}
+
+			else if(len_email != 0 && len_senha != 0 && len_usuario == 0){
+				alert("Por favor, insira seu usuario");
+			}		
+
+			else if(email != confirm_email && senha != confirm_pw){
 				alert("Emails e Senhas não batem");
 			}
 			else if(email != confirm_email && senha == confirm_pw){
-				alert("Emails não batem")
+				alert("Emails não batem");
 			}
 			else if(email == confirm_email && senha != confirm_pw){
-				alert("Senhas não batem")
+				alert("Senhas não batem");
 			}
 			else{
-				alert("Sucesso!");
+				alert("Conta Criada com Sucesso!");
+				location.href="index-projeto1.html";
 			}
 
 		}

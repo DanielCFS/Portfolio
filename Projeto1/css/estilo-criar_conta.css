@@ -1,6 +1,15 @@
 /*------------------------- CRIAR CONTA ---------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
 
+@keyframes slideUp{
+	from{
+		transform: translateY(100%);
+	}
+	to{
+		transform: translateY(0%);
+	}
+}
+
 
 html,body{
 	height:  100%;
@@ -21,6 +30,7 @@ body{
 
 
 #conta{
+	animation: slideUp 0.6s;
 	display: inline-block;		
 	margin-top: 4%;
 	box-shadow: 0 0 5px 3px;
@@ -31,5 +41,24 @@ body{
 }
 
 input{
+	border-left: none;
+	border-top:  none;
+	border-right:  none;
 	margin-top: 5%;
+	width: 90%;
+	font-size: 18px;
+}
+
+input:focus{
+	outline: none;
+}
+
+#submit{
+	width: 30%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 15%;
+	color: white;
+	font-weight: bold;
+	background-color: blue;
 }
