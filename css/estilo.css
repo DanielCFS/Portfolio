@@ -114,10 +114,6 @@ section{
 	text-align: center;
 	border-spacing: 10px;
 	box-shadow: 1px 1px 10px;
-	font-size: 26px;
-}
-section ul{
-	list-style-type:  none;
 }
 
 #divinfo,#divproj,#divexp{
@@ -147,18 +143,32 @@ section ul{
 #informaçoes{
 	animation: 0.5s ease-out 0s 1 slideInRight, fade 1s;
 	transform: translateY(-999%);
-	animation-fill-mode: forwards; 
+	animation-fill-mode: forwards;
+	font-size: 28px; 
 
+}
+#experiencias h4,#experiencias p{
+	text-align: justify-all;
 }
 #experiencias{
 	animation: 0.5s ease-out 0s 1 slideInRight, fade 1s;
 	transform: translateY(-999%);
 	animation-fill-mode: forwards; 
+	font-size: 18px;
+	list-style-position: inside; 
 }
 #projetos{
 	animation: 0.5s ease-out 0s 1 slideInRight, fade 1s;
 	transform: translateY(-999%);
-	animation-fill-mode: forwards; 
+	animation-fill-mode: forwards;
+	list-style-position: inside;
+	text-align:  left;
+}
+
+#projetos a{
+	font-size: 24px;
+	text-decoration: none;
+	color: black;
 }
 
 #basico,#profissional,#tituloprojetos{
@@ -286,12 +296,21 @@ hr{
 
 section{
 	width: 90%;
-	font-size: 18px;
 	margin:auto;
 	display: block;
 	margin-bottom: 7px;
 	text-align: center;
 }
+#informaçoes{
+	font-size: 18px;
+}
+#experiencias{
+	font-size: 12.9px;
+}
+#projetos a{
+	font-size: 22px;
+}
+
 button{
 
  position: sticky;
