@@ -286,6 +286,7 @@ hr{
 
 section{
 	width: 90%;
+	font-size: 18px;
 	margin:auto;
 	display: block;
 	margin-bottom: 7px;
@@ -293,7 +294,7 @@ section{
 }
 button{
 
- position: fixed;
+ position: sticky;
  color: solid white;
 
 }
