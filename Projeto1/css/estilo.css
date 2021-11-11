@@ -134,6 +134,12 @@ body{
 	font-size: 20px;
 }
 
+footer{
+	position: absolute;
+	bottom: 0;
+	color:  white;
+}
+
 @media (max-width: 860px){
 	html,body{
 		overflow-y: visible;
@@ -168,6 +174,9 @@ body{
 	}
 	#forgot{
 		font-size:  14px;
+	}
+	footer{
+		position: static;
 	}
 
 }

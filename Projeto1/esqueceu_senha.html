@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="C:\Users\usuario\Downloads\Daniel\Portifolio-main\Projeto1\css\estilo-criar_conta.css">
+</head>
+	<body>
+		<div id="container-forgot">
+			<div id="esqueceu">
+				<h1>Esqueceu a senha?</h1>
+				<form>
+					<input id="email" type="email" name="email" placeholder="Insira o e-mail usado na conta!" required><br>
+				</form>	
+				<button id="submit" onclick="validation()">Enviar</button>
+				<button id="voltar" onclick="voltar()">Voltar</button>
+			</div>
+		</div>
+	</body>
+	<script>
+		function validation(){
+			alert("E-mail enviado com sucesso!");
+			location.href="index-projeto1.html";
+		}
+		function voltar(){
+			location.href="index-projeto1.html";
+		}
+	</script>
+</html>
+

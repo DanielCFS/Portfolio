@@ -15,12 +15,10 @@ html,body{
 	height:  100%;
 	overflow: hidden;
 	text-align: center;
-}
-
-body{
 	background-image: linear-gradient(to right,#8312A5,#720B98,#561496,#391E94,#1D2791,#0037A5);
 	background-repeat: no-repeat;
 }
+
 
 
 #container-create{
@@ -61,4 +59,48 @@ input:focus{
 	color: white;
 	font-weight: bold;
 	background-color: blue;
+}
+
+
+/*--------ESQUECEU A SENHA-------*/
+
+#container-forgot{
+	height: 100%;
+	font-family: 'Nunito';
+
+}
+#esqueceu{
+	animation: slideUp 0.6s;
+	display: inline-block;		
+	margin-top: 13%;
+	box-shadow: 0 0 5px 3px;
+	width: 32%;
+	height: 40%;
+	border-radius: 2px 2px 2px 2px;
+	background-color:  white;
+}
+
+#voltar{
+	width: 30%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 15%;
+	color: white;
+	font-weight: bold;
+	margin-left:  10%;
+	background-color: purple;
+}
+
+
+/*--------- RESPONSIVIDADE --------- */
+
+@media (max-width:  860px){
+	#conta{
+		width: 100%;
+		margin-top: 20%;
+	}
+	#esqueceu{
+		width: 100%;
+		margin-top: 50%;
+	}
 }
