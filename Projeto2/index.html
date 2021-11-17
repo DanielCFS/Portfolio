@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="C:\Users\User\Documents\Daniel\Portifolio-main\Projeto2\css\estilo.css">
+</head>
+<div id="container">
+<body>
+	<div id="container-header">
+		<header class="cabecalho">
+			<h1>História da Internet</h1>
+		</header>
+	</div>
+	<div id="container-nav">
+		<nav class="navegador">
+			<a class="pg1" href="#">Página 1</a>
+			<a class="pg2" href="#">Página 2</a>
+			<a class="pg3" href="#">Página 3</a>
+		</nav>
+	</div>
+	<div id="container-pai1">
+	<div id="container-texto1">
+		<h2 class="comeco">O começo</h2>
+	</div>
+	<div id="container-section1">
+		<section class="secao">
+			<p id="mais1" onclick="abrir()">+<br>
+				Clique Aqui</p>
+			<p id="paragrafo1">A internet foi criada em 1969, nos Estados Unidos. Chamada de Arpanet, tinha como função interligar laboratórios de pesquisa. Naquele ano, um professor da Universidade da Califórnia passou para um amigo em Stanford o primeiro e-mail da história.
+
+Essa rede pertencia ao Departamento de Defesa norte-americano. O mundo vivia o auge da Guerra Fria. A Arpanet era uma garantia de que a comunicação entre militares e cientistas persistiria, mesmo em caso de bombardeio. Eram pontos que funcionavam independentemente de um deles apresentar problemas.
+
+A partir de 1982, o uso da Arpanet tornou-se maior no âmbito acadêmico. Inicialmente, o uso era restrito aos EUA, mas se expandiu para outros países, como Holanda, Dinamarca e Suécia. Desde então, começou a ser utilizado o nome internet.</p>
+		</section>
+	</div>
+    </div>
+	<div id="container-pai2">
+		<div id="container-texto2">
+			<h2 class="meio">Os anos seguintes</h2>
+		</div>
+		<div id="container-section2">
+			<section class="secao">
+				<p id="mais2" onclick="">+<br>
+				Clique Aqui</p>
+				<p id="paragrafo2">Inserir meio da internet</p>
+			</section>
+		</div>
+	</div>
+	<div id="container-pai3">
+		<div id="container-texto3">
+			<h2 class="atual">Atualmente</h2>
+		</div>
+		<div id="container-section3">
+			<section class="secao">
+				<p id="mais3" onclick="">+<br>
+				Clique Aqui</p>
+				<p id="paragrafo3">Inserir atual da internet</p>
+			</section>
+		</div>
+	</div>
+	<hr>
+	<div id="container-footer">
+		<footer class="rodape">
+			<i>Criador por: Daniel Camba Fernandes</i>
+		</footer>
+	</div>
+
+<script>
+	function abrir(){
+		 document.getElementById("container-texto1").style.display="none";
+		 document.getElementById("container-section1").style.cssText="animation: expandir 1s;"
+		 document.getElementById("mais1").style.display="none";
+		 document.getElementById("paragrafo1").style.cssText="display: block;"
+
+		 const element = document.getElementById("container-section1");
+		 element.addEventListener("animationend", ()=>{
+		 	element.style.width="96%";
+		 }, {once: true});
+}
+</script>
+</body>
+</div>
+</html>
+
