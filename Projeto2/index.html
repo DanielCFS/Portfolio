@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="C:\Users\User\Documents\Daniel\Portifolio-main\Projeto2\css\estilo.css">
+	<link rel="stylesheet" href="C:\Users\usuario\Downloads\Daniel\Portifolio-main\Projeto2\css\estilo.css">
 </head>
 <div id="container">
 <body>
@@ -27,11 +27,16 @@
 		<section class="secao">
 			<p id="mais1" onclick="abrir()">+<br>
 				Clique Aqui</p>
-			<p id="paragrafo1">A internet foi criada em 1969, nos Estados Unidos. Chamada de Arpanet, tinha como função interligar laboratórios de pesquisa. Naquele ano, um professor da Universidade da Califórnia passou para um amigo em Stanford o primeiro e-mail da história.
-
-Essa rede pertencia ao Departamento de Defesa norte-americano. O mundo vivia o auge da Guerra Fria. A Arpanet era uma garantia de que a comunicação entre militares e cientistas persistiria, mesmo em caso de bombardeio. Eram pontos que funcionavam independentemente de um deles apresentar problemas.
-
-A partir de 1982, o uso da Arpanet tornou-se maior no âmbito acadêmico. Inicialmente, o uso era restrito aos EUA, mas se expandiu para outros países, como Holanda, Dinamarca e Suécia. Desde então, começou a ser utilizado o nome internet.</p>
+			<p id="linha1">A internet foi criada em 1969, nos Estados Unidos.<br>	
+			<p id="linha2"> Chamada de Arpanet, tinha como função interligar laboratórios de pesquisa.</p>
+			<p id="linha3">	Naquele ano, um professor da Universidade da Califórnia passou para um amigo em Stanford o primeiro e-mail da história.</p>
+			<p id="linha4">Essa rede pertencia ao Departamento de Defesa norte-americano. O mundo vivia o auge da Guerra Fria.</p>
+			<p id="linha5"> A Arpanet era uma garantia de que a comunicação entre militares e cientistas persistiria, mesmo em caso de bombardeio.
+			<p id="linha6">	Eram pontos que funcionavam independentemente de um deles apresentar problemas.</p>
+			<p id="linha7"> A partir de 1982, o uso da Arpanet tornou-se maior no âmbito acadêmico.</p>
+			<p id="linha8"> Inicialmente, o uso era restrito aos EUA, mas se expandiu para outros países, como Holanda, Dinamarca e Suécia. 
+			<p id="linha9">Desde então, começou a ser utilizado o nome internet.</p>
+			<p id="X" onclick="fechar()">X</p>
 		</section>
 	</div>
     </div>
@@ -41,9 +46,14 @@ A partir de 1982, o uso da Arpanet tornou-se maior no âmbito acadêmico. Inicia
 		</div>
 		<div id="container-section2">
 			<section class="secao">
-				<p id="mais2" onclick="">+<br>
+				<p id="mais2" onclick="abrir_dois()">+<br>
 				Clique Aqui</p>
-				<p id="paragrafo2">Inserir meio da internet</p>
+				<p id="linha10">Por quase duas décadas, apenas os meios acadêmico e científico tiveram acesso à rede.</p>
+				<p id="linha11"> Em 1987, pela primeira vez foi liberado seu uso comercial nos EUA.</p>
+				<p id="linha12"> Em 1992, começaram a surgir diversas empresas provedoras de acesso à internet naquele país.</p>
+				<p id="linha13"> No mesmo ano, o Laboratório Europeu de Física de Partículas (Cern) inventou a World Wide Web,</p> 
+				<p id="linha14"> Que começou a ser utilizada para colocar informações ao alcance de qualquer usuário da internet.</p>
+				<p id="X2" onclick="fechar_dois()">X</p>
 			</section>
 		</div>
 	</div>
@@ -53,31 +63,137 @@ A partir de 1982, o uso da Arpanet tornou-se maior no âmbito acadêmico. Inicia
 		</div>
 		<div id="container-section3">
 			<section class="secao">
-				<p id="mais3" onclick="">+<br>
+				<p id="mais3" onclick="abrir_tres()">+<br>
 				Clique Aqui</p>
-				<p id="paragrafo3">Inserir atual da internet</p>
+				<p id="linha15">Desde então, a difusão da rede foi enorme.</p>
+				<p id="linha16">Hoje, a internet tem mais de 250 milhões de usuários em todo o mundo.
+				<p id="linha17">Até o final de 2004, o tráfego mundial de e-mails deverá estar em torno de 35 bilhões de mensagens diárias.
+				<p id="linha18">Quase 90% dos usuários de internet estão nos países industrializados.</p>
+				<p id="linha19"> Os EUA e o Canadá respondem por 57% do total, segundo relatório da Organização Internacional do Trabalho.</p>
+				<p id="linha20">No Brasil, a exploração comercial foi liberada em 1995.</p>
+				<p id="linha21">Universidades como as federais do Rio Grande do Sul e do Rio de Janeiro estavam conectadas à rede desde 1989.</p>
+				<p id="linha22">A Fapesp (Fundação de Amparo à Pesquisa de São Paulo) conectou-se um ano depois.</p>
+				<p id="X3" onclick="fechar_tres()">X</p>
 			</section>
 		</div>
 	</div>
+	<br>
 	<hr>
 	<div id="container-footer">
 		<footer class="rodape">
-			<i>Criador por: Daniel Camba Fernandes</i>
+			<i>Criado por: Daniel Camba Fernandes</i>
 		</footer>
 	</div>
 
 <script>
 	function abrir(){
 		 document.getElementById("container-texto1").style.display="none";
-		 document.getElementById("container-section1").style.cssText="animation: expandir 1s;"
+		 document.getElementById("container-section1").style.cssText="animation: expandir 1s forwards;"
 		 document.getElementById("mais1").style.display="none";
-		 document.getElementById("paragrafo1").style.cssText="display: block;"
+		 document.getElementById("linha1").style.cssText="display: block;"
+		 document.getElementById("linha2").style.cssText="display: block;"
+		 document.getElementById("linha3").style.cssText="display: block;"
+		 document.getElementById("linha4").style.cssText="display: block;"
+		 document.getElementById("linha5").style.cssText="display: block;"
+		 document.getElementById("linha6").style.cssText="display: block;"
+		 document.getElementById("linha7").style.cssText="display: block;"
+		 document.getElementById("linha8").style.cssText="display: block;"
+		 document.getElementById("linha9").style.cssText="display: block;"
+		 document.getElementById("X").style.cssText="display: block;"
 
-		 const element = document.getElementById("container-section1");
-		 element.addEventListener("animationend", ()=>{
-		 	element.style.width="96%";
-		 }, {once: true});
+		 document.getElementById("container-section1").addEventListener("animationend",function(){
+		 	document.getElementById("container-texto1").style.cssText="display: none;"
+		 })
+
+
 }
+function fechar(){
+		 document.getElementById("container-section1").style.cssText="animation: diminuir 1s forwards;"
+		 document.getElementById("mais1").style.display="block";
+		 document.getElementById("linha1").style.cssText="display: none;"
+		 document.getElementById("linha2").style.cssText="display: none;"
+		 document.getElementById("linha3").style.cssText="display: none;"
+		 document.getElementById("linha4").style.cssText="display: none;"
+		 document.getElementById("linha5").style.cssText="display: none;"
+		 document.getElementById("linha6").style.cssText="display: none;"
+		 document.getElementById("linha7").style.cssText="display: none;"
+		 document.getElementById("linha8").style.cssText="display: none;"
+		 document.getElementById("linha9").style.cssText="display: none;"
+		 document.getElementById("X").style.cssText="display: none;"
+
+		 document.getElementById("container-section1").addEventListener("animationend",function(){
+		 	document.getElementById("container-texto1").style.cssText="display: block; animation: aparecer 0.5s;";
+		 });
+		 }
+
+function abrir_dois(){
+		document.getElementById("container-texto2").style.display="none";
+		 document.getElementById("container-section2").style.cssText="animation: expandir 1s forwards;"
+		 document.getElementById("mais2").style.display="none";
+		 document.getElementById("linha10").style.cssText="display: block;"
+		 document.getElementById("linha11").style.cssText="display: block;"
+		 document.getElementById("linha12").style.cssText="display: block;"
+		 document.getElementById("linha13").style.cssText="display: block;"
+		 document.getElementById("linha14").style.cssText="display: block;"
+		 document.getElementById("X2").style.cssText="display: block;"
+
+		 document.getElementById("container-section2").addEventListener("animationend",function(){
+		 	document.getElementById("container-texto2").style.cssText="display: none;"
+		 })
+
+}
+
+function fechar_dois(){
+		 document.getElementById("container-section2").style.cssText="animation: diminuir 1s forwards;"
+		 document.getElementById("mais2").style.display="block";
+		 document.getElementById("linha10").style.cssText="display: none;"
+		 document.getElementById("linha11").style.cssText="display: none;"
+		 document.getElementById("linha12").style.cssText="display: none;"
+		 document.getElementById("linha13").style.cssText="display: none;"
+		 document.getElementById("linha14").style.cssText="display: none;"
+		 document.getElementById("X2").style.cssText="display: none;"
+
+		 document.getElementById("container-section2").addEventListener("animationend",function(){
+		 	document.getElementById("container-texto2").style.cssText="display: block; animation: aparecer 0.5s;"
+		 })
+
+}
+	function abrir_tres(){
+		 document.getElementById("container-texto3").style.display="none";
+		 document.getElementById("container-section3").style.cssText="animation: expandir 1s forwards;"
+		 document.getElementById("mais3").style.display="none";
+		 document.getElementById("linha15").style.cssText="display: block;"
+		 document.getElementById("linha16").style.cssText="display: block;"
+		 document.getElementById("linha17").style.cssText="display: block;"
+		 document.getElementById("linha18").style.cssText="display: block;"
+		 document.getElementById("linha19").style.cssText="display: block;"
+		 document.getElementById("linha20").style.cssText="display: block;"
+		 document.getElementById("linha21").style.cssText="display: block;"
+		 document.getElementById("linha22").style.cssText="display: block;"
+		 document.getElementById("X3").style.cssText="display: block;"
+
+		 document.getElementById("container-section3").addEventListener("animationend",function(){
+		 	document.getElementById("container-texto3").style.cssText="display: none;"
+		 })
+
+}
+	function fechar_tres(){
+		 document.getElementById("container-section2").style.cssText="animation: diminuir 1s forwards;"
+		 document.getElementById("mais2").style.display="block";
+		 document.getElementById("linha15").style.cssText="display: none;"
+		 document.getElementById("linha16").style.cssText="display: none;"
+		 document.getElementById("linha17").style.cssText="display: none;"
+		 document.getElementById("linha18").style.cssText="display: none;"
+		 document.getElementById("linha19").style.cssText="display: none;"
+		 document.getElementById("linha20").style.cssText="display: none;"
+		 document.getElementById("linha21").style.cssText="display: none;"
+		 document.getElementById("linha22").style.cssText="display: none;"
+		 document.getElementById("X3").style.cssText="display: none;"
+
+		 document.getElementById("container-section3").addEventListener("animationend",function(){
+		 	document.getElementById("container-texto3").style.cssText="display: block; animation: aparecer 0.5s;"
+		 })
+	}
 </script>
 </body>
 </div>

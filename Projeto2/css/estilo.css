@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 
 
 @keyframes expandir{
@@ -11,12 +12,30 @@
 	}
 }
 
+@keyframes diminuir{
+	from{
+		width: 96%;
+	}
+	to{
+		width: 40%;
+	}
+}
+
 @keyframes digitando{
 	from{
-		width: 0%;
+		width: 0;
 	}
 	to{
 		width: 100%;
+	}
+}
+
+@keyframes aparecer{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 100;
 	}
 }
 
@@ -48,12 +67,13 @@ html{
 }
 
 .cabecalho{
-	background-color: lightblue;
+	color: white;
 	width: 68%;
+	text-shadow:7px 7px 0px black ;
 	text-align: center;
 	margin-left: 17%;
 	font-size: 200%;
-	border: 1px solid black;
+	font-family: 'Outfit', sans-serif;
 }
 .navegador{
 	color: black;
@@ -80,16 +100,72 @@ html{
 	color: white;
 	cursor: pointer;
 }
-#paragrafo1,#paragrafo2,#paragrafo3{
+#linha1,#linha2,#linha3,#linha4,#linha5,#linha6,#linha7,#linha8,#linha9,#linha10,#linha11,#linha12,#linha13,#linha14{
 	display: none;
 	font-family: 'Prompt' ;
 	color: white;
 	overflow: hidden;
-  	white-space: pre-line;
-  	margin: 0 auto;
+	margin: 0 auto;
+	white-space: nowrap;
+	width: 0;
   	letter-spacing: .15em;
-  	animation: digitando 3.5s steps(40, end)
+  	animation: digitando 3.5s steps(40, end);
+  	animation-fill-mode: forwards;
 }
+
+#linha1{
+	animation-delay: 1s;
+}
+#linha2{
+	animation-delay: 3s;
+}
+#linha3{
+	animation-delay: 6s;
+}
+#linha4{
+	animation-delay: 10s;
+}
+#linha5{
+	animation-delay: 14s;
+}
+#linha6{
+	animation-delay: 17s;
+}
+#linha7{
+	animation-delay: 19.5s;
+}
+#linha8{
+	animation-delay: 22s;
+}
+#linha9{
+	animation-delay: 25s;
+}
+#X,#X2{
+	display: none;
+	cursor: pointer;
+	color: white;
+  	font-size: 36px;
+  	margin-left: 97%;
+  	margin-top: 3%;
+}
+
+#linha10{
+	margin-top: 4%;
+	animation-delay: 1s;
+}
+#linha11{
+	animation-delay: 4s;
+}
+#linha12{
+	animation-delay: 6s;
+}
+#linha13{
+	animation-delay: 9s;
+}
+#linha14{
+	animation-delay: 12s;
+}
+
 #container-pai1,#container-pai2,#container-pai3{
 	margin-top: 10%;
 	width: 100%;
@@ -130,6 +206,7 @@ html{
 	border: 1px solid white;
 	box-shadow: 2px 2px;
 	background-color: black;
+	margin-left: 2%;
 }
 #container-section3{
 	float: right;
@@ -138,5 +215,6 @@ html{
 	border: 1px solid white;
 	box-shadow: 2px 2px;
 	background-color: black;
+	margin-right: 2%;
 }
 }
