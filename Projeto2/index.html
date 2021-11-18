@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="C:\Users\usuario\Downloads\Daniel\Portifolio-main\Projeto2\css\estilo.css">
+	<link rel="stylesheet" href="C:\Users\User\Documents\Daniel\Portifolio-main\Projeto2\css\estilo.css">
 </head>
 <div id="container">
 <body>
@@ -12,13 +12,9 @@
 			<h1>História da Internet</h1>
 		</header>
 	</div>
-	<div id="container-nav">
-		<nav class="navegador">
-			<a class="pg1" href="#">Página 1</a>
-			<a class="pg2" href="#">Página 2</a>
-			<a class="pg3" href="#">Página 3</a>
-		</nav>
-	</div>
+	<br>
+	<br>
+	<hr>
 	<div id="container-pai1">
 	<div id="container-texto1">
 		<h2 class="comeco">O começo</h2>
@@ -78,7 +74,19 @@
 		</div>
 	</div>
 	<br>
+	<br>
 	<hr>
+	<br>
+		<div id="container-nav">
+		<nav class="navegador">
+			<a class="pg1" href="#">O que são linguagens front-end?</a>
+			<a class="pg2" href="#">O que é protocólo HTTP?</a>
+			<a class="pg3" href="#">Referências</a>
+		</nav>
+	</div>
+	<br>
+	<hr>
+	<br>
 	<div id="container-footer">
 		<footer class="rodape">
 			<i>Criado por: Daniel Camba Fernandes</i>
@@ -178,8 +186,8 @@ function fechar_dois(){
 
 }
 	function fechar_tres(){
-		 document.getElementById("container-section2").style.cssText="animation: diminuir 1s forwards;"
-		 document.getElementById("mais2").style.display="block";
+		 document.getElementById("container-section3").style.cssText="animation: diminuir 1s forwards;"
+		 document.getElementById("mais3").style.display="block";
 		 document.getElementById("linha15").style.cssText="display: none;"
 		 document.getElementById("linha16").style.cssText="display: none;"
 		 document.getElementById("linha17").style.cssText="display: none;"
@@ -194,6 +202,52 @@ function fechar_dois(){
 		 	document.getElementById("container-texto3").style.cssText="display: block; animation: aparecer 0.5s;"
 		 })
 	}
+
+		const checkpoint = 100;
+
+	window.addEventListener("scroll",function(){
+		  const currentScroll = window.pageYOffset;
+  		if (currentScroll <= checkpoint) {
+    		opacity = 0 - currentScroll / checkpoint;
+  		} 
+  		else {
+    		opacity = 1;
+  		}
+
+		document.getElementById("container-pai1").style.opacity=opacity
+	})
+
+	const checkpoint2 = 400;
+
+	window.addEventListener("scroll",function(){
+		  const currentScroll = window.pageYOffset;
+  		if (currentScroll <= checkpoint2) {
+    		opacity = 0 - currentScroll / checkpoint2;
+  		} 
+  		else {
+    		opacity = 1;
+  		}
+
+		document.getElementById("container-pai2").style.opacity=opacity
+	})
+
+		const checkpoint3 = 800;
+
+	window.addEventListener("scroll",function(){
+		  const currentScroll = window.pageYOffset;
+  		if (currentScroll <= checkpoint3) {
+    		opacity = 0 - currentScroll / checkpoint3;
+  		} 
+  		else {
+    		opacity = 1;
+  		}
+
+		document.getElementById("container-pai3").style.opacity=opacity
+	})
+
+
+
+
 </script>
 </body>
 </div>
