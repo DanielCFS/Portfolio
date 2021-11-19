@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap');
 
 
 @keyframes expandir{
@@ -37,6 +38,15 @@
 	}
 	to{
 		opacity: 100;
+	}
+}
+
+@keyframes slideInRight{
+	from{
+		transform: translateX(-100%);
+	}
+	to{
+		transform: translateX(0%);
 	}
 }
 
@@ -260,4 +270,197 @@ transition: opacity 0.5s;
 	background-color: black;
 	margin-right: 2%;
 }
+
+/* CSS LINGUAGEM */
+
+#html_linguagem,#corpo_linguagem{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#html_linguagem{
+	background-color: slategrey;
+}
+
+#container_linguagem{
+	width: 100%;
+	height: 100%;
+}
+
+#container-cabecalho_linguagem{
+	text-align: center;
+	width: 100%;
+	margin-left: 8%;
+}
+
+#container-nav_linguagem{
+	float: left;
+	height: 100%;
+	margin-top: 14%;
+	animation: slideInRight 1s forwards;
+}
+#container-nav_linguagem a{
+	color: black;
+	white-space: nowrap;
+	background-color: white;
+	text-decoration: none;
+	font-size: 200%;
+	border: 2px solid black;
+}
+
+#container-nav_linguagem a:hover{
+	color: white;
+	background-color: black;
+}
+#http{
+	margin-top: 2%;
+}
+
+#cabecalho_linguagem{
+	width: 100%;
+	font-family: 'Rubik';
+	font-size: 28px;
+}
+
+#conteudo_linguagem{
+	margin-top: 1%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: block;
+	font-size: 18px;
+}
+
+#oq_linguagem,#linguagem{
+	width: 68%;
+	background-color: black;
+	color: white;
+	display: inline-block;
+}
+
+
+#inicio_linguagem{
+	display: inline-block;
+	width: 68%;
+	height: auto;
+	border: 1px solid black;
+	box-shadow: 5px 5px;
+	background-color: white;
+}
+
+li{ 
+	text-align: left;
+	margin-left: 2%;
+}
+
+img{
+	width: 3%;
+}
+
+#meio_linguagem{
+    display: inline-block;
+	width: 68%;
+	height: 68%;
+	border: 1px solid black;
+	box-shadow: 5px 5px;
+	background-color: white;
+}
+
+/* CSS HTTP */
+
+#html_http,#corpo_http{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#html_http{
+	background-color: slategrey;
+}
+
+#container_http{
+	width: 100%;
+	height: 100%;
+}
+
+#container-cabecalho_http{
+	text-align: center;
+	width: 100%;
+	margin-left: 8%;
+}
+
+#container-nav_http{
+	float: left;
+	height: 100%;
+	margin-top: 14%;
+	animation: slideInRight 1s forwards;
+}
+#container-nav_http a{
+	color: black;
+	white-space: nowrap;
+	background-color: white;
+	text-decoration: none;
+	font-size: 200%;
+	border: 2px solid black;
+}
+
+#container-nav_http a:hover{
+	color: white;
+	background-color: black;
+}
+#http_m{
+	margin-top: 2%;
+}
+
+#cabecalho_http{
+	width: 100%;
+	font-family: 'Rubik';
+	font-size: 28px;
+}
+
+#conteudo_http{
+	margin-top: 1%;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	display: block;
+	font-size: 18px;
+}
+
+#oq_http,#http{
+	width: 68%;
+	background-color: black;
+	color: white;
+	display: inline-block;
+}
+
+
+#inicio_http{
+	display: inline-block;
+	width: 68%;
+	height: auto;
+	border: 1px solid black;
+	box-shadow: 5px 5px;
+	background-color: white;
+}
+
+li{ 
+	text-align: left;
+	margin-left: 2%;
+}
+
+img{
+	width: 3%;
+}
+
+#meio_http{
+    display: inline-block;
+	width: 68%;
+	height: 68%;
+	border: 1px solid black;
+	box-shadow: 5px 5px;
+	background-color: white;
+}
+
+table{
+	border: 1px solid black;
 }
