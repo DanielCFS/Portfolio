@@ -270,6 +270,10 @@ transition: opacity 0.5s;
 	background-color: black;
 	margin-right: 2%;
 }
+#pg1,#pg2,#pg3:hover{
+	color:white;
+	background-color: black;
+}
 
 /* CSS LINGUAGEM */
 
