@@ -1,0 +1,23 @@
+<html>
+<head>
+	<link rel="stylesheet" href="C:\Users\User\Documents\Daniel\teste\estilo.css">
+</head>
+<body>
+<div>
+	<img id="quadrado" src="C:\Users\User\Documents\Daniel\teste\quadrado.png" alt="quadrado">
+</div>
+</body>
+	<script>
+		var x = document.getElementById("quadrado");
+		var n = 0
+
+		window.addEventListener("keydown",function(){
+			n++;
+			x.style.left = n+'px';
+			console.log(n+'px');
+
+		
+		});
+
+	</script>
+</html>
