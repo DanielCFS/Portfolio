@@ -276,7 +276,7 @@ transition: opacity 0.5s;
 #html_linguagem,#corpo_linguagem{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 #html_linguagem{
 	background-color: slategrey;
@@ -303,6 +303,7 @@ transition: opacity 0.5s;
 	color: black;
 	white-space: nowrap;
 	background-color: white;
+	width: 77%;
 	text-decoration: none;
 	font-size: 200%;
 	border: 2px solid black;
@@ -332,7 +333,7 @@ transition: opacity 0.5s;
 }
 
 #oq_linguagem,#linguagem{
-	width: 68%;
+	width: 75%;
 	background-color: black;
 	color: white;
 	display: inline-block;
@@ -341,7 +342,7 @@ transition: opacity 0.5s;
 
 #inicio_linguagem{
 	display: inline-block;
-	width: 68%;
+	width: 75%;
 	height: auto;
 	border: 1px solid black;
 	box-shadow: 5px 5px;
@@ -359,11 +360,19 @@ img{
 
 #meio_linguagem{
     display: inline-block;
-	width: 68%;
-	height: 68%;
+	width: 75%;
+	height: 75%;
 	border: 1px solid black;
 	box-shadow: 5px 5px;
 	background-color: white;
+}
+
+#divisor_footer{
+    width:100%;
+}
+#rodape_linguagem{
+    
+    float: right;
 }
 
 /* CSS HTTP */
@@ -371,7 +380,7 @@ img{
 #html_http,#corpo_http{
 	width: 100%;
 	height: 100%;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 #html_http{
 	background-color: slategrey;
@@ -407,7 +416,7 @@ img{
 	color: white;
 	background-color: black;
 }
-#http_m{
+#http{
 	margin-top: 2%;
 }
 
@@ -426,9 +435,15 @@ img{
 	font-size: 18px;
 }
 
-#oq_http,#http{
+#oq_http{
 	width: 68%;
 	background-color: black;
+	color: white;
+	display: inline-block;
+}
+#http_m{
+    width: 75%;
+    background-color: black;
 	color: white;
 	display: inline-block;
 }
@@ -454,13 +469,78 @@ img{
 
 #meio_http{
     display: inline-block;
-	width: 68%;
-	height: 68%;
+	width: 75%;
 	border: 1px solid black;
 	box-shadow: 5px 5px;
 	background-color: white;
+	font-size: 1.02vw;
 }
 
-table{
+#rodape_http{
+    display: inline-block;
+    float: right;
+}
+
+/* ---- CSS Referencias ----*/
+
+#html_ref,#corpo_ref{
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+#html_ref{
+	background-color: blue;
+}
+
+#container_ref{
+	width: 100%;
+	height: 100%;
+}
+
+#container-cabecalho_ref{
+	width: 100%;
+}
+
+#cabecalho_ref{
+	text-align: center;
+	font-family: 'Outfit', sans-serif;
+	text-shadow:7px 7px 0px black ;
+	color: white;
+	font-size: 220%;
+}
+#container-tabela_ref{
+    width:100%;
+    text-align:center;
+}
+
+#tabela_ref{
+    background-color:white;
+    width: 80%;
+    margin-left: 10%;
+    border-spacing:0;
+}
+
+#tabela_ref th,td{
 	border: 1px solid black;
 }
+
+#tabela_ref td{
+    word-break: break-all;
+}
+
+#subtitulo1_ref,#subtitulo2_ref{
+    text-align:center;
+    font-family: 'Prompt' ;
+    color: white;
+    font-size: 280%;
+    text-shadow:2px 2px 0px black ;
+}
+#videos_ref{
+    text-align: center;
+}
+
+#rodape_ref{
+    float:right;
+    color: grey;
+}
+
