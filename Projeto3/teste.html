@@ -1,23 +1,66 @@
 <html>
 <head>
-	<link rel="stylesheet" href="C:\Users\User\Documents\Daniel\teste\estilo.css">
+	<link rel="stylesheet" href="C:\Users\usuario\Downloads\Daniel\Portfolio-main\Projeto3\css\estilo.css">
 </head>
 <body>
 <div>
-	<img id="quadrado" src="C:\Users\User\Documents\Daniel\teste\quadrado.png" alt="quadrado">
+	<img id="goku_parado" src="C:\Users\usuario\Downloads\Daniel\Portfolio-main\Projeto3\Imagens\Goku\Goku [base]\goku_by_lukasahl1-d7ftrg3_01.png" alt="goku">
+	<img id="goku_front" src="C:\Users\usuario\Downloads\Daniel\Portfolio-main\Projeto3\Imagens\Goku\Goku [base]\goku_by_lukasahl1-d7ftrg3_05.png" alt="goku">
+	<img id="goku_back" src="C:\Users\usuario\Downloads\Daniel\Portfolio-main\Projeto3\Imagens\Goku\Goku [base]\goku_by_lukasahl1-d7ftrg3_04.png" alt="goku">
 </div>
 </body>
 	<script>
-		var x = document.getElementById("quadrado");
-		var n = 0
+		let x = document.getElementById("goku_parado");
+		let y = document.getElementById("goku_front");
+		let z = document.getElementById("goku_back");
+		let n = 0
+		let speed = 1000
+		
 
-		window.addEventListener("keydown",function(){
+		window.addEventListener("keydown",function(event){
+
+			let e = event.keyCode;
+			x.style.display = "none";
+			y.style.display = "block";
+			if(e == 68){
 			n++;
+			y.style.left = n+'px';
 			x.style.left = n+'px';
+			z.style.left = n+'px';
 			console.log(n+'px');
+		}
+
+		else if(e == 65){
+			z.style.display = "block"
+			x.style.display = "none";
+			y.style.display = "none";
+			n--;
+			y.style.left = n+'px';
+			x.style.left = n+'px';
+			z.style.left = n+'px';
+			console.log(n+'px');
+		}
+
+		else{
+			//não acontece nada
+		}
 
 		
 		});
+
+		window.addEventListener("keyup",function(event){
+				let e = event.keyCode;
+				if(e==68){
+				y.style.display = "none"
+				x.style.display = "block"
+			}
+			else if(e == 65){
+				z.style.display = "none"
+				x.style.display = "block"
+		}
+		});
+
+		setTimeout(event,speed);
 
 	</script>
 </html>

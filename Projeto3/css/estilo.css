@@ -2,7 +2,10 @@ div{
 	width: 100%;
 	height: 100%;
 }
-#quadrado{
+#goku_parado,#goku_front,#goku_back{
 	position: absolute;
 	left: 0;
+}
+#goku_front,#goku_back{
+	display: none;
 }
