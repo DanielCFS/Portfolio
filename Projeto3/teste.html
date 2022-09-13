@@ -7,48 +7,71 @@
 	<img id="goku_parado" src="https://drive.google.com/uc?id=1ayRv5V3HYNadgNPygnJ_N7wXvXz0Yh7m" alt="goku">
 	<img id="goku_front" src="https://drive.google.com/uc?id=1cc0ffmz33ndkmjNHZ6s-DqUlqKqEN079" alt="goku">
 	<img id="goku_back" src="https://drive.google.com/uc?id=1K3CgoJCIXlcpWu6TL3jGqXJnIpVAEr1d" alt="goku">
+	<img id="goku_punch" src="https://drive.google.com/uc?id=1tsL6Q9uZeWV0X7oHPMZoG_du-HMvyCA7" alt="goku">
+	<img id="goku_punch_2" src="https://drive.google.com/uc?id=1LJjRU0RlqMrtP2RYwwhhS_deAWPQJo-G" alt="goku">
 </div>
 </body>
 	<script>
 		let x = document.getElementById("goku_parado");
 		let y = document.getElementById("goku_front");
 		let z = document.getElementById("goku_back");
-		let n = 0
-		let speed = 10000
+		let punch = document.getElementById("goku_punch");
+		let punch_2 = document.getElementById("goku_punch_2");
+		let n = 1;
+		let speed = 10;
 		
+		//var goku_velocidade = setInterval(go,speed);
+
+		//function go(){
 
 		window.addEventListener("keydown",function go(event){
 
 			let e = event.keyCode;
 			x.style.display = "none";
 			y.style.display = "block";
+			punch.style.display = "none";
 			if(e == 68){
-			n++;
+			n = n+13;
 			y.style.left = n+'px';
 			x.style.left = n+'px';
 			z.style.left = n+'px';
+			punch.style.left = n+'px';
 			console.log(n+'px');
+
 		}
 
 		else if(e == 65){
 			z.style.display = "block"
 			x.style.display = "none";
 			y.style.display = "none";
-			n--;
+			punch.style.display = "none";
+			n = n-13;
 			y.style.left = n+'px';
 			x.style.left = n+'px';
 			z.style.left = n+'px';
+			punch.style.left = n+'px';
 			console.log(n+'px');
+		}
+
+		else if(e==74){
+			z.style.display = "none";
+			x.style.display = "none";
+			y.style.display = "none";
+			punch.style.display = "block";
+			
 		}
 
 		else{
 			z.style.display = "none"
 			x.style.display = "block";
 			y.style.display = "none";
+			punch.style.display = "none";
 		}
 
 		
-		});
+		
+		})//};
+		
 
 		window.addEventListener("keyup",function stop(event){
 				let e = event.keyCode;
@@ -62,7 +85,8 @@
 		}
 		});
 
-		setInterval(go,speed);
+
+
 
 	</script>
 </html>
