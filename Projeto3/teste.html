@@ -17,14 +17,13 @@
 		let speed = 10000
 		
 
-		window.addEventListener("keydown",function(event){
+		window.addEventListener("keydown",function go(event){
 
 			let e = event.keyCode;
 			x.style.display = "none";
 			y.style.display = "block";
 			if(e == 68){
 			n++;
-			setInterval(event,speed);
 			y.style.left = n+'px';
 			x.style.left = n+'px';
 			z.style.left = n+'px';
@@ -51,7 +50,7 @@
 		
 		});
 
-		window.addEventListener("keyup",function(event){
+		window.addEventListener("keyup",function stop(event){
 				let e = event.keyCode;
 				if(e==68){
 				y.style.display = "none"
@@ -63,7 +62,7 @@
 		}
 		});
 
-		
+		setInterval(go,speed);
 
 	</script>
 </html>
